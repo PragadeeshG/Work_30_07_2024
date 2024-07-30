@@ -1,0 +1,15 @@
+create table if not exists single_factor_authenticator_job_maintenance(
+sfa_device_id Integer not null,
+down_time_applicable varchar(255) null,
+down_time_notification_mode varchar(255) null,
+from_system varchar(255) null,
+to_system varchar(255) null,
+active_directory varchar(255) null,
+open_id varchar(255) null,
+serverless char null,
+serveerless_model_name varchar(255) null,
+lambdas varchar(255) null,
+queue_name varchar(255) null,
+queue_type varchar(255) null,
+status varchar(255) null,
+constraint single_factor_authenticator_job_maintenance_pk primary key(sfa_device_id));
